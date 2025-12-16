@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: pink;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.pulse {
+    animation: pulseAnim 1s infinite alternate;
+}
+
+@keyframes pulseAnim {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.3); }
+  }
+
+  .wave {
+    animation: waveAnim 2s infinite ease-in-out;
+  }
+
+  @keyframes waveAnim {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+
+  .rotate {
+    animation: rotateAnim 3s linear infinite;
+  }
+
+  @keyframes rotateAnim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
